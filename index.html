@@ -102,18 +102,18 @@ body {
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --dark-blue:   #0D1F3C;
-  --mid-blue:    #1A3660;
-  --light-blue:  #1E4080;
-  --pink-red:    #E8534B;
-  --red-line:    #E4182E;
+  --dark-blue:   #1A1A1A;
+  --mid-blue:    #292929;
+  --light-blue:  #545050;
+  --pink-red:    #E4FB00;
+  --red-line:    #E4FB00;
   --white:       #FFFFFF;
-  --off-white:   #F5F4F0;
-  --grey:        #8E9BAD;
-  --light-grey:  #D4D8DE;
-  --table-dark:  #162D52;
-  --table-mid1:  #1A3460;
-  --table-mid2:  #1C386A;
+  --off-white:   #EBEAEA;
+  --grey:        #AFADAC;
+  --light-grey:  #D8D5D5;
+  --table-dark:  #1A1A1A;
+  --table-mid1:  #292929;
+  --table-mid2:  #545050;
   --nav-width:   260px;
 }
 
@@ -136,7 +136,7 @@ body {
   top: 0; left: 0;
   width: var(--nav-width);
   height: 100vh;
-  background: #08152A;
+  background: #000000;
   display: flex;
   flex-direction: column;
   overflow-y: auto;
@@ -197,7 +197,7 @@ body {
 }
 
 .nav-item.active {
-  background: rgba(232,83,75,0.12);
+  background: rgba(228,251,0,0.12);
   color: var(--white);
   border-left-color: var(--pink-red);
   font-weight: 700;
@@ -219,6 +219,7 @@ body {
 
 .nav-item.active .step-num {
   background: var(--pink-red);
+  color: #000000;
 }
 
 /* CSS-based active nav highlight via :target (works without JS) */
@@ -231,7 +232,7 @@ body {
 #step5:target ~ * .nav-item[href="#step5"],
 #step6:target ~ * .nav-item[href="#step6"],
 #step7:target ~ * .nav-item[href="#step7"] {
-  background: rgba(232,83,75,0.12);
+  background: rgba(228,251,0,0.12);
   color: var(--white);
 }
 
@@ -398,7 +399,7 @@ main:has(#cover:target) #cover.active {
 }
 
 .cover-step-pill:hover {
-  background: rgba(232,83,75,0.15);
+  background: rgba(228,251,0,0.15);
   border-color: var(--pink-red);
   color: var(--white);
 }
@@ -430,7 +431,7 @@ main:has(#cover:target) #cover.active {
 .section-title {
   font-family: 'NoaSerif', serif;
   font-weight: 400;
-  font-size: 52px;
+  font-size: 40px;
   line-height: 1.1;
   color: var(--dark-blue);
   margin-bottom: 20px;
@@ -473,7 +474,7 @@ main:has(#cover:target) #cover.active {
 .process-step:hover .step-circle {
   background: var(--pink-red);
   border-color: var(--pink-red);
-  color: white;
+  color: #000000;
 }
 
 .step-circle {
@@ -520,7 +521,7 @@ main:has(#cover:target) #cover.active {
 }
 
 .badge-recommended {
-  background: rgba(232,83,75,0.10);
+  background: rgba(228,251,0,0.10);
   color: var(--pink-red);
 }
 
@@ -664,7 +665,7 @@ main:has(#cover:target) #cover.active {
 .step-section:target { display: block; }
 
 .step-header {
-  background: #08152A;
+  background: #000000;
   padding: 40px 72px 36px;
   border-bottom: 1px solid rgba(255,255,255,0.08);
   display: flex;
@@ -677,7 +678,7 @@ main:has(#cover:target) #cover.active {
   font-weight: 700;
   font-size: 36px;
   line-height: 1;
-  color: var(--white);
+  color: #000000;
   width: 88px;
   height: 88px;
   border-radius: 50%;
@@ -691,7 +692,7 @@ main:has(#cover:target) #cover.active {
 .step-header-info {}
 
 .step-header-label {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -702,7 +703,7 @@ main:has(#cover:target) #cover.active {
 .step-header-title {
   font-family: 'NoaSerif', serif;
   font-weight: 400;
-  font-size: 42px;
+  font-size: 32px;
   color: var(--white);
   margin-bottom: 12px;
   line-height: 1.15;
@@ -739,7 +740,7 @@ main:has(#cover:target) #cover.active {
 }
 
 .block-title {
-  font-size: 18px !important;
+  font-size: 14px !important;
   font-weight: 700;
   letter-spacing: 0.16em;
   text-transform: uppercase;
@@ -1117,7 +1118,7 @@ main:has(#cover:target) #cover.active {
   white-space: nowrap;
 }
 
-.ov-step-badge.required  { background: rgba(232,83,75,0.15); color: var(--pink-red); }
+.ov-step-badge.required  { background: rgba(228,251,0,0.15); color: var(--pink-red); }
 .ov-step-badge.recommended { background: rgba(255,255,255,0.07); color: rgba(255,255,255,0.55); }
 .ov-step-badge.optional  { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.55); }
 .ov-step-badge.senior    { background: rgba(255,255,255,0.05); color: rgba(255,255,255,0.55); }
@@ -1231,8 +1232,8 @@ main:has(#cover:target) #cover.active {
 .ov-own-who  { color: var(--white); font-weight: 500; }
 
 .ov-stop-box {
-  background: rgba(232,83,75,0.08);
-  border: 1px solid rgba(232,83,75,0.20);
+  background: rgba(228,251,0,0.08);
+  border: 1px solid rgba(228,251,0,0.20);
   border-radius: 3px;
   padding: 16px 18px;
   margin-top: 4px;
@@ -1269,7 +1270,7 @@ main:has(#cover:target) #cover.active {
 }
 
 .ov-section-block.alt {
-  background: #0A1828;
+  background: #000000;
 }
 
 .ov-section-eyebrow {
@@ -1305,9 +1306,9 @@ main:has(#cover:target) #cover.active {
   padding: 28px 28px 32px;
 }
 
-.ov-score-card.red  { background: #1A0D0D; }
-.ov-score-card.grey { background: #111E30; }
-.ov-score-card.green { background: #0C1D18; }
+.ov-score-card.red  { background: #1A1A1A; }
+.ov-score-card.grey { background: #292929; }
+.ov-score-card.green { background: #292929; }
 
 .ov-score-card-num {
   font-family: 'NoaSerif', serif;
@@ -1318,7 +1319,7 @@ main:has(#cover:target) #cover.active {
 }
 
 .ov-score-card.red   .ov-score-card-num { color: #EB5757; }
-.ov-score-card.grey  .ov-score-card-num { color: #8E9BAD; }
+.ov-score-card.grey  .ov-score-card-num { color: #AFADAC; }
 .ov-score-card.green .ov-score-card-num { color: #6FCF97; }
 
 .ov-score-card-label {
@@ -1330,7 +1331,7 @@ main:has(#cover:target) #cover.active {
 }
 
 .ov-score-card.red   .ov-score-card-label { color: #EB5757; }
-.ov-score-card.grey  .ov-score-card-label { color: #8E9BAD; }
+.ov-score-card.grey  .ov-score-card-label { color: #AFADAC; }
 .ov-score-card.green .ov-score-card-label { color: #6FCF97; }
 
 .ov-score-card-desc {
@@ -1442,8 +1443,8 @@ main:has(#cover:target) #cover.active {
 
 /* Stop block */
 .ov-stop-block {
-  background: rgba(232,83,75,0.07);
-  border: 1px solid rgba(232,83,75,0.18);
+  background: rgba(228,251,0,0.07);
+  border: 1px solid rgba(228,251,0,0.18);
   border-radius: 4px;
   padding: 28px 32px;
 }
@@ -1749,10 +1750,10 @@ main:has(#cover:target) #cover.active {
 
   <div class="nav-section-label">Document</div>
   <a class="nav-item active" href="#cover" onclick="showSection('cover'); return false;">
-    <span class="step-num">▸</span> Cover
+    <span class="step-num">↑</span> Cover
   </a>
   <a class="nav-item" href="#overview" onclick="showSection('overview'); return false;">
-    <span class="step-num">☰</span> Overview & Methodology
+    <span class="step-num">≡</span> Overview & Methodology
   </a>
 
   <div class="nav-section-label">Step Details</div>
@@ -1780,7 +1781,7 @@ main:has(#cover:target) #cover.active {
 
   <div class="sidebar-footer">
     Internal document · NoA<br>
-    Recruitment &amp; Talent
+    People &amp; Talent
   </div>
 </nav>
 
@@ -1793,7 +1794,7 @@ main:has(#cover:target) #cover.active {
 <section class="section active" id="cover">
   <div class="cover-top">
     <div class="cover-noa-logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.1 124.4"><style>.st0{fill:#FFFFFF;}</style><g><polygon class="st0" points="81.9,80.4 32.3,1.7 0,1.7 0,124.4 28,124.4 28,47.1 76.8,124.4 109.9,124.4 109.9,1.7 81.9,1.7"/><path class="st0" d="M174.9,0c-27.2,0-49.4,22.1-49.4,49.4c0,27.2,22.1,49.4,49.4,49.4c27.2,0,49.4-22.1,49.4-49.4C224.3,22.1,202.1,0,174.9,0z M174.9,71.5c-12.2,0-22.2-10-22.2-22.2c0-12.2,10-22.2,22.2-22.2s22.2,10,22.2,22.2C197.1,61.6,187.2,71.5,174.9,71.5z"/><path class="st0" d="M294.7,1.7h-35.3l-41.5,122.7h30.5l6.1-20.4h47.4l6.8,20.4h31.4L294.7,1.7z M262.5,77.2l14.3-47.8l16.1,47.8H262.5z"/></g></svg></div>
-    <p class="cover-eyebrow">Recruitment &amp; Talent</p>
+    <p class="cover-eyebrow">People &amp; Talent</p>
     <h1 class="cover-title">Recruitment<br><span class="cover-title-pink">Playbook</span></h1>
     <p class="cover-subtitle" style="margin-top:24px">A consistent, fair, and evidence-based framework for hiring for competence, long-term impact, and cultural alignment.</p>
     <div style="height:48px"></div>
@@ -1804,7 +1805,7 @@ main:has(#cover:target) #cover.active {
       </div>
       <div class="cover-meta-item">
         <div class="label">Owner</div>
-        <div class="value">Talent &amp; HR</div>
+        <div class="value">People &amp; Talent</div>
       </div>
       <div class="cover-meta-item">
         <div class="label">Steps</div>
@@ -2144,13 +2145,19 @@ main:has(#cover:target) #cover.active {
         <li>Relocation support availability (if applicable)</li>
         <li>Make sure that everyone involved in the hiring process has added their work calendar to Teamtailor</li>
       </ul>
+      <div class="block-subtitle">Communication Rhythm</div>
+      <ul>
+        <li>Preferred update channel: Teamtailor (default), Slack, or email — agree early</li>
+        <li>Frequency: weekly written updates recommended as a minimum</li>
+        <li>Format: async or sync (brief call/f2f) — agree what works for the HM</li>
+      </ul>
     </div>
 
     <div class="block">
       <div class="block-title">Recruitment Process &amp; Timeline</div>
       <div class="block-subtitle">Typical Process</div>
       <table class="structure-table">
-        <tr><td>Stage 1</td><td>Talent Partner Screening (30 min) — Culture fit, motivation, career narrative, compensation alignment</td></tr>
+        <tr><td>Stage 1</td><td>Talent Partner Screening (30 min) — Motivation, cultural add, career narrative, compensation alignment</td></tr>
         <tr><td>Stage 2</td><td>Hiring Manager Interview (45–60 min) — In-depth competency and role-specific discussion, values and culture</td></tr>
         <tr><td>Stage 3</td><td>Technical or Case Assessment (if applicable) — Skills-based evaluation relevant to the role</td></tr>
         <tr><td>Stage 4</td><td>Reference check (if preferred)</td></tr>
@@ -2159,13 +2166,7 @@ main:has(#cover:target) #cover.active {
       <div class="block-subtitle">Target Timeline</div>
       <ul>
         <li>Target start date for the new hire</li>
-        <li>Agreed deadline for the job ad to be unpublished</li>
         <li>Any critical milestones or blackout periods (e.g., holidays, leadership travel)</li>
-      </ul>
-      <div class="block-subtitle">Communication Rhythm</div>
-      <ul>
-        <li>Preferred channel for updates (ATS should be the default channel, could also be email or Slack)</li>
-        <li>Frequency of progress check-ins</li>
       </ul>
     </div>
 
@@ -2246,7 +2247,7 @@ main:has(#cover:target) #cover.active {
           </ul>
         </div>
         <div>
-          <div class="block-subtitle">Role &amp; Company Fit</div>
+          <div class="block-subtitle">Role &amp; Company Match</div>
           <ul>
             <li>What kind of responsibilities are you most interested in?</li>
             <li>What type of team or culture do you thrive in?</li>
@@ -2458,7 +2459,7 @@ main:has(#cover:target) #cover.active {
       <table class="outcome-table">
         <tr>
           <td><div class="outcome-score" style="color:#EB5757">1–2</div><div class="outcome-label">Do not proceed</div></td>
-          <td class="outcome-desc">Clear gap in competence, ownership, or values. Stop the process.</td>
+          <td class="outcome-desc">Clear gap in competence, ownership, or values. Do not continue the process.</td>
         </tr>
         <tr>
           <td><div class="outcome-score" style="color:#F2C94C">3</div><div class="outcome-label">Discuss with TP</div></td>
@@ -2495,6 +2496,7 @@ main:has(#cover:target) #cover.active {
     <div class="block">
       <div class="block-title">Purpose</div>
       <p>Assess applied competence in a realistic scenario. Evaluate structured problem-solving, decision-making logic, communication clarity and seniority.</p>
+      <div style="margin-top:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:14px 18px"><p style="margin:0 0 6px;font-size:11px;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:var(--pink-red);font-family:'NoaGrotesk',sans-serif">HI Assessment</p><p style="margin:0;font-size:13px;color:rgba(255,255,255,0.65)">A HI Assessment may be used as an alternative or complement to a case study — particularly for roles where structured cognitive or personality profiling adds value. Whether this step is included, and who administers it, should be agreed at the Startup Meeting.</p></div>
     </div>
 
     <div class="block">
@@ -2697,7 +2699,7 @@ main:has(#cover:target) #cover.active {
       <table class="outcome-table">
         <tr>
           <td><div class="outcome-score" style="color:#EB5757">Do not proceed</div></td>
-          <td class="outcome-desc">Strategic thinking or leadership maturity clearly below bar. Stop the process.</td>
+          <td class="outcome-desc">Strategic thinking or leadership maturity clearly below bar. Do not continue the process.</td>
         </tr>
         <tr>
           <td><div class="outcome-score" style="color:#F2C94C">Proceed with caution</div></td>
@@ -2740,7 +2742,7 @@ main:has(#cover:target) #cover.active {
       <div class="block-title">Reference Selection</div>
       <ul>
         <li>Minimum two references; ideally three</li>
-        <li>At least one must be a direct line manager</li>
+        <li>At least one should be a direct line manager</li>
         <li>References should be recent (within the last 3–5 years)</li>
         <li>Avoid character references or personal contacts only</li>
         <li>The candidate provides referee details. The Talent Partner contacts referees directly and schedules calls.</li>
@@ -2869,7 +2871,7 @@ main:has(#cover:target) #cover.active {
         <tr><td>15–20 min</td><td>Evidence discussion — Discuss each evaluation dimension with specific examples</td></tr>
         <tr><td>10 min</td><td>Final decision — Agree on hire / no hire and offer level</td></tr>
       </table>
-      <div style="margin-top:16px;background:rgba(235,87,87,0.1);border:1px solid rgba(235,87,87,0.35);border-radius:8px;padding:14px 18px;display:flex;align-items:center;gap:12px"><span style="font-size:20px;flex-shrink:0">⚠️</span><p style="margin:0;font-size:13.5px;color:var(--pink-red);font-weight:700">Avoid group discussion before all written feedback has been submitted.</p></div>
+      <div style="margin-top:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:14px 18px"><p style="margin:0;font-size:13.5px;color:rgba(255,255,255,0.7);font-style:italic">Note: Avoid group discussion before all written feedback has been submitted.</p></div>
     </div>
 
     <div class="block">
@@ -2877,11 +2879,10 @@ main:has(#cover:target) #cover.active {
       <p style="margin-bottom:12px">Once a decision to proceed has been made, agree internally before contacting the candidate:</p>
       <ul>
         <li>Salary, bonus structure and total compensation package</li>
-        <li>Offer level and seniority title</li>
         <li>Start date range based on the candidate's notice period</li>
         <li>What is negotiable — and what is not — before the call</li>
       </ul>
-      <div style="margin-top:16px;background:rgba(235,87,87,0.1);border:1px solid rgba(235,87,87,0.35);border-radius:8px;padding:14px 18px;display:flex;align-items:center;gap:12px"><span style="font-size:20px;flex-shrink:0">⚠️</span><p style="margin:0;font-size:13.5px;color:var(--pink-red);font-weight:700">Do not contact the candidate until internal alignment is complete and the written offer letter is ready to issue.</p></div>
+      <div style="margin-top:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:14px 18px"><p style="margin:0;font-size:13.5px;color:rgba(255,255,255,0.7);font-style:italic">Note: Do not contact the candidate until internal alignment is complete and the written offer letter is ready to issue.</p></div>
     </div>
 
     <div class="block">
@@ -2896,9 +2897,10 @@ main:has(#cover:target) #cover.active {
     </div>
 
     <div class="block">
-      <div class="block-title">Handling Negotiations</div>
-      <p style="margin-bottom:16px;font-size:14px;color:rgba(255,255,255,0.65)">It is normal for candidates to negotiate. The Talent Partner leads the conversation.</p>
+      <div class="block-title">Managing the Offer &amp; Negotiation</div>
+      <p style="margin-bottom:16px;font-size:14px;color:rgba(255,255,255,0.65)">It is normal for candidates to negotiate. Who leads the offer conversation should be agreed at the Startup Meeting — and that alignment should be maintained throughout. Regardless of who handles the conversation:</p>
       <ul style="margin-bottom:20px">
+        <li>Agree at the Startup Meeting who owns the offer conversation — Talent Partner, Hiring Manager, or jointly</li>
         <li>Never make commitments without prior alignment with the Hiring Manager and Finance</li>
         <li>Give the candidate 24–72 hours to consider — avoid applying pressure</li>
         <li>Document everything agreed verbally before issuing any revised letter</li>
@@ -2911,7 +2913,7 @@ main:has(#cover:target) #cover.active {
           <tr><td>Salary</td><td>Be clear on range and what drives flexibility. A competing offer requires documented evidence.</td></tr>
           <tr><td>Start date</td><td>Check notice period constraints. Agree on the latest acceptable start date with the HM.</td></tr>
           <tr><td>Title</td><td>Escalate to the Hiring Manager if not resolved upfront. Do not improvise.</td></tr>
-          <tr><td>Other benefits</td><td>TP and HM must align before responding to any non-standard requests.</td></tr>
+          <tr><td>Other benefits</td><td>TP and HM should align before responding to any non-standard requests.</td></tr>
         </tbody>
       </table>
     </div>
